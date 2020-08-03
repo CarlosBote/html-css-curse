@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+:root{
+/* Colors */
+--green-color:#6dc526;
+--white-color:#fff;
+--black-color: #313337;
+--dark-green: #366410;
+/* Box-shadow */
+--box:0px 0px 21px -4px rgba(0, 0, 0, 0.5);
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  background: var(--green-color);
+}
+.header-container {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas: "logo . nav";
+  align-items: center;
+}
+.logo {
+  margin: 12px;
+  grid-area: logo;
+}
+.menu {
+  grid-area: nav;
+}
+.menu ul {
+  display: flex;
+}
+.menu li {
+  marker: none;
+  list-style: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  padding: 0 20px;
+  color:var(--black-color);
+  font-weight: 600;
+}
+
+.menu li a:hover {
+  color:var(--white-color);
+}
+.main {
+  width: minmax(1128px, 1600px);
+  justify-content: center;
+}
+h1 {
+  display: block;
+  font-size: 32px;
+  text-align: center;
+  padding: 0;
+  margin-top: 100px;
+}
+.card-list {
+  display: flex;
+  margin-top: 160px;
+  justify-content: center;
+  background-image: url("../images/curve.png");
+  background-size: cover;
+  background-position: center top;
+}
+.card {
+  /* width: 300px; */
+  margin: -100px 10px 20px;
+  padding: 10px;
+  background:var(--white-color);
+  border-radius: 8px;
+  box-shadow:var(--box);
+}
+.product-image {
+  text-align: center;
+}
+.card h2 {
+  font-size: 28px;
+}
+.main-button {
+  background-color: var(--green-color);
+  width: 100%;
+  padding: 10px;
+  font-size: 17px;
+  color: var(--white-color);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.main-button:hover {
+  background-color: var(--dark-green) ;
+}
+
