@@ -1,19 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-:root{
-/* Colors */
---green-color:#6dc526;
---white-color:#fff;
---black-color: #313337;
---dark-green: #366410;
-/* Box-shadow */
---box:0px 0px 21px -4px rgba(0, 0, 0, 0.5);
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+:root {
+  /* Colors */
+  --green-color: #6dc526;
+  --white-color: #fff;
+  --black-color: #313337;
+  --dark-green-color: #366410;
+  --light-gray-color: #eeeeee;
+  /* Box-shadow */
+  --box: 0px 0px 21px -4px rgba(0, 0, 0, 0.5);
 }
 html,
 body {
   padding: 0;
   margin: 0;
   font-size: 12px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 header {
@@ -43,12 +44,12 @@ header {
 .menu li a {
   text-decoration: none;
   padding: 0 20px;
-  color:var(--black-color);
+  color: var(--black-color);
   font-weight: 600;
 }
 
 .menu li a:hover {
-  color:var(--white-color);
+  color: var(--white-color);
 }
 .main {
   width: minmax(1128px, 1600px);
@@ -64,18 +65,18 @@ h1 {
 .card-list {
   display: flex;
   margin-top: 160px;
+  padding-bottom: 80px;
   justify-content: center;
   background-image: url("../images/curve.png");
   background-size: cover;
   background-position: center top;
 }
 .card {
-  /* width: 300px; */
   margin: -100px 10px 20px;
   padding: 10px;
-  background:var(--white-color);
+  background: var(--white-color);
   border-radius: 8px;
-  box-shadow:var(--box);
+  box-shadow: var(--box);
 }
 .product-image {
   text-align: center;
@@ -94,6 +95,85 @@ h1 {
   cursor: pointer;
 }
 .main-button:hover {
-  background-color: var(--dark-green) ;
+  background-color: var(--dark-green-color);
+}
+
+.adventages {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0 50px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.adventage {
+  width: 200px;
+  margin: 40px;
+  padding: 20px;
+}
+.adventage figure {
+  text-align: center;
+  width: 150px;
+  height: 50%;
+}
+.adventage img {
+  width: 100%;
+}
+.adventage h3 {
+  font-size: 17px;
+  text-align: center;
+}
+.mentions {
+  padding: 0 150px 68px;
+}
+.mentions h2 {
+  display: block;
+  font-size: 32px;
+  text-align: center;
+  padding: 0;
+  margin: 100px 0 40px;
+}
+.mentions-list {
+  display: flex;
+
+  justify-content: center;
+}
+.mention-card {
+  margin: 10px;
+  width: 240px;
+}
+.mention-card figure {
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  margin-bottom: -4px;
+}
+.mention-card p {
+  width: 100%;
+}
+.card-text {
+  padding: 10px;
+  padding-top: 0;
+  box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.5);
+}
+.card-text h3 {
+  margin: 0 0 10px;
+}
+.card-text p {
+  margin-top: 0px;
+  position: relative;
+  z-index: 2;
+}
+footer {
+  background:var(--black-color);
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+}
+footer a {
+  color: var(--white-color);
+  text-decoration: none;
+  margin:20px;
+
 }
 
