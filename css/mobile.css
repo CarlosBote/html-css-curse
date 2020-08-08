@@ -1,0 +1,88 @@
+@media screen and (max-width: 768px) {
+  .header-container {
+    grid-template-columns:  100px 1fr;
+    grid-template-areas: "logo nav"; 
+  }
+
+  .card-list,
+  .adventages,
+  .mentions-list,
+  .mentions {
+    display: inherit;
+  }
+  h1 {
+    display: inherit;
+    font-size: 32px;
+    text-align: center;
+    padding: 0 40px;
+    margin-top: 70px;
+    
+  }
+  .card-list {
+    margin-top: 70px;
+    padding-bottom: 50px;
+  }
+  .card {
+    margin: 6% 15%;
+    padding: 4%;
+    max-width: none;
+    min-width: 270px;
+  }
+  .card p {
+    font-size: 14px;
+  }
+  .adventages {
+    padding-top: 50px;
+  }
+  .adventage {
+    width: auto;
+    min-width: 270px;
+  }
+  .adventage figure {
+    width: auto;
+  }
+  .adventage img {
+    width: auto;
+  }
+  .adventage h3 {
+    font-size: 18px;
+  }
+  .adventage p {
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+  }
+  .mentions {
+    padding: 0;
+    margin: 0;
+  }
+  .mentions h2 {
+    margin-bottom: 60px;
+
+  }
+  .mentions-list {
+    padding: 0;
+    margin: 0;
+  }
+  .mention-card {
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .mention-card figure {
+    text-align: center;
+    width: auto;
+  }
+  .mention-card img {
+    width: 100%;
+  }
+  .card-text {
+    width: auto;
+    text-align: center;
+    margin: auto;
+  }
+}
