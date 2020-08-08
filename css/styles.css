@@ -35,6 +35,8 @@ header {
 }
 .menu ul {
   display: flex;
+  justify-content: flex-end;
+  padding:0;
 }
 .menu li {
   marker: none;
@@ -52,7 +54,7 @@ header {
   color: var(--white-color);
 }
 .main {
-  width: minmax(1128px, 1600px);
+  /* width: minmax(1128px, 1600px); */
   justify-content: center;
 }
 h1 {
@@ -70,6 +72,8 @@ h1 {
   background-image: url("../images/curve.png");
   background-size: cover;
   background-position: center top;
+  background-repeat: no-repeat;
+  height: auto;
 }
 .card {
   margin: -100px 10px 20px;
@@ -77,6 +81,7 @@ h1 {
   background: var(--white-color);
   border-radius: 8px;
   box-shadow: var(--box);
+  max-width: 250px;
 }
 .product-image {
   text-align: center;
@@ -134,7 +139,6 @@ h1 {
 }
 .mentions-list {
   display: flex;
-
   justify-content: center;
 }
 .mention-card {
@@ -143,9 +147,7 @@ h1 {
 }
 .mention-card figure {
   margin: 0;
-  position: relative;
-  z-index: 1;
-  margin-bottom: -4px;
+  /* margin-bottom: -4px; */
 }
 .mention-card p {
   width: 100%;
@@ -160,11 +162,9 @@ h1 {
 }
 .card-text p {
   margin-top: 0px;
-  position: relative;
-  z-index: 2;
 }
 footer {
-  background:var(--black-color);
+  background: var(--black-color);
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -173,7 +173,5 @@ footer {
 footer a {
   color: var(--white-color);
   text-decoration: none;
-  margin:20px;
-
+  margin: 20px;
 }
-
