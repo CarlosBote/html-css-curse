@@ -85,4 +85,18 @@
     text-align: center;
     margin: auto;
   }
+  /*-----------------------------------------------------------------------sell*/
+  .sell{
+  display: block;
+  }
+  .main-sell {
+    display:block;
+  }
+  .product-in-purchase {
+    width: auto;
+    max-width: none;
+  }
+  .purchase-form {
+    width: auto;
+  }
 }
