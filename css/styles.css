@@ -295,6 +295,18 @@ footer a {
   border: 1px solid;
   box-sizing: border-box;
 }
-
-
-
+/*------------------------------------------------------transaction result*/
+.result-page {
+  background-color: var(--black-color);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.result-message {
+  color: var(--light-gray-color);
+}
+.result-message a {
+  color: var(--green-color);
+}
